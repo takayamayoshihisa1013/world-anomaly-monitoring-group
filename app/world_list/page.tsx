@@ -41,7 +41,7 @@ export default function WorldList() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {WORLD_LIST.map((world) => (
 
-                        <Link href={`/world_list/world?world_id=${world.id}`} key={world.id}>
+                        <Link href={`/world_list/world/${world.id}`} key={world.id}>
                             <div className="border border-gray-700 bg-black/40 p-5 hover:bg-gray-800/50 hover:border-[#d10000] transition-all duration-300 group cursor-pointer relative overflow-hidden">
                                 {/* ホバー時に左端に出る赤いアクセント */}
                                 <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#d10000] opacity-0 group-hover:opacity-100 transition-opacity" />
