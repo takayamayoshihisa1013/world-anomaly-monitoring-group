@@ -12,7 +12,7 @@ export type WorldStatus = {
     anomaly_level: number;
     description: string;
     image: string;
-    weight:number;
+    weight: number;
 }
 
 export const WORLD_LIST: WorldInfo[] = [
@@ -181,6 +181,49 @@ export const WORLD_LIST: WorldInfo[] = [
                 description: "見渡す限りの草原が広がっている。\n空は赤く染まり、巨大な惑星が頭上を埋め尽くしている。\n惑星はあまりにも近く、その表面の模様まではっきりと見える。\n今にも衝突しそうな距離にあるはずなのに、世界は静かなままだ。\n草原には風が吹いている。\nそれなのに、空だけが何かおかしい。",
                 image: "anomaly_1.png",
                 weight: 20,
+            }
+        ]
+    },
+    {
+        id: 7,
+        name: "線路のない駅",
+        description: "線路が存在しない不思議な駅のホーム",
+        status: [
+            {
+                id: 1,
+                is_anomaly: false,
+                anomaly_level: 10,
+                status_name: "正常",
+                description: "夕暮れの空の下、静かな駅のホームがどこまでも続いている。\nベンチや自動販売機、案内板や屋根付きの待合スペースもあり、一見するとどこにでもある駅のように見える。\nだが、この世界には線路が存在しない。\nホームの先には空と地平線だけが広がっている。\nそれでも不思議なことに、この場所はきちんと駅として成り立っているように感じられる。\nただ静かな夕焼けの中で、ホームだけがそこにあり続けている。",
+                image: "normal_1.png",
+                weight: 55,
+            },
+            {
+                id: 2,
+                is_anomaly: true,
+                anomaly_level: 15,
+                status_name: "電光掲示板",
+                description: "夕暮れの空の下、静かな駅のホームがどこまでも続いている。\nベンチや自動販売機、案内板も変わらない。\nだがホームの上には電光掲示板が吊り下げられている。\n表示されるべき時刻や行先はどこにもない。\n画面は真っ黒なまま灯りもついていない。\nこの世界には列車も線路も存在しないはずなのに、その掲示板だけが何かを待ち続けているように見える。",
+                image: "normal_2.png",
+                weight: 15,
+            },
+            {
+                id: 3,
+                is_anomaly: true,
+                anomaly_level: 15,
+                status_name: "到着",
+                description: "夕暮れの空の下、静かな駅のホームがどこまでも続いている。\nベンチや自動販売機、案内板も変わらない。\nだが、ホームの左側には一両の電車が停車している。\nこの世界には本来、線路が存在しないはずだ。\nそれでも電車は当然のようにそこにあり、誰かを待っているようにも見える。\n行先表示は読めず、車内にも人の姿は見当たらない。\nいつからそこにいたのかは分からない。",
+                image: "normal_3.png",
+                weight: 15,
+            },
+            {
+                id: 4,
+                is_anomaly: true,
+                anomaly_level: 180,
+                status_name: "待ち人",
+                description: "夕暮れの空の下、静かな駅のホームがどこまでも続いている。\nベンチや自動販売機、案内板も変わらない。\nだがホームの途中に、一人の人影が立っている。\n後ろ姿は普通の人間に見える。\nしかし首だけが異様に長く、不自然なほど高い位置に頭がある。\nこちらを見ているのかは分からない。\nそれでも目を離すたびに、少しだけ近付いているような気がする。",
+                image: "anomaly_1.png",
+                weight: 10,
             }
         ]
     }
