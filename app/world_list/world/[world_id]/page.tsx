@@ -1,7 +1,7 @@
 "use client"
 
-import { WORLD_LIST, WorldStatus } from "../../constants/WorldList"
-import { useSearchParams } from "next/navigation"
+import { WORLD_LIST, WorldStatus } from "../../../constants/WorldList"
+import { useParams, useSearchParams } from "next/navigation"
 import { useEffect, useState } from "react";
 
 import { Yuji_Syuku } from "next/font/google";
@@ -14,8 +14,8 @@ const yujiSyuku = Yuji_Syuku({
 
 export default function World() {
 
-    const params = useSearchParams();
-    const worldId = params.get("world_id");
+    const params = useParams();
+    const worldId = params.world_id;;
     const [menuOpen, setMenuOpen] = useState(false)
 
     // ▼ ノイズの表示状態を管理するstateを追加 ▼
