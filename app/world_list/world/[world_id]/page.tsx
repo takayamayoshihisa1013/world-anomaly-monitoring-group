@@ -215,7 +215,7 @@ export default function World() {
 
                             <section className="flex flex-col gap-3 lg:gap-4">
                                 {WORLD_LIST.map((world, key) => (
-                                    <Link href={`/world_list/world?world_id=${world.id}`} key={key} onClick={() => setMenuOpen(false)}>
+                                    <Link href={`/world_list/world/${world.id}`} key={key} onClick={() => setMenuOpen(false)}>
                                         <div className="border border-gray-700 bg-black/40 p-3 lg:p-4 hover:bg-gray-800/50 hover:border-[#d10000] transition-all duration-300 group cursor-pointer relative overflow-hidden">
                                             <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#d10000] opacity-0 group-hover:opacity-100 transition-opacity" />
                                             <p className="text-gray-400 text-xs lg:text-sm font-mono mb-1">
