@@ -226,5 +226,39 @@ export const WORLD_LIST: WorldInfo[] = [
                 weight: 10,
             }
         ]
+    },
+    {
+        id: 8,
+        name: "湖上図書館",
+        description: "静かな湖の中央に建てられた図書館",
+        status: [
+            {
+                id: 1,
+                is_anomaly: false,
+                anomaly_level: 10,
+                status_name: "正常",
+                description: "夕暮れの湖の中央に、一棟の図書館が建っている。\n木製の橋が入口まで続き、館内には暖かな灯りが灯っている。\n湖面は鏡のように穏やかで、空や建物を静かに映している。\n周囲には山々が広がり、人の姿は見当たらない。\nただ本と静寂だけが、この場所を満たしている。",
+                image: "normal_1.png",
+                weight: 70,
+            },
+            {
+                id: 2,
+                is_anomaly: false,
+                anomaly_level: 60,
+                status_name: "正常？",
+                description: "夕暮れの湖の中央に、一棟の図書館が建っている。\n橋や湖面、館内の灯りは変わらない。\nだが空には月が二つ浮かんでいる。\nどちらも自然にそこに存在しているように見える。\n湖面には二つの月が静かに映り込み、景色は以前よりも幻想的になっている。\n不思議ではあるが、どこか美しい光景だ。",
+                image: "anomaly_1.png",
+                weight: 20,
+            },
+            {
+                id: 3,
+                is_anomaly: true,
+                anomaly_level: 180,
+                status_name: "正常？",
+                description: "夕暮れの湖の中央に、一棟の図書館が建っている。\n橋や湖面、館内の灯りは変わらない。\nだが空は深い黒に覆われ、その中心は渦を巻くように暗く沈み込んでいる。\n見上げていると、空そのものがどこかへ吸い込まれているように感じられる。\n湖面にもその暗闇が映り込み、静かな景色に重い圧迫感を与えている。\nそれでも図書館の灯りだけは消えることなく輝き続けている。",
+                image: "anomaly_2.png",
+                weight: 10,
+            }
+        ]
     }
 ]
