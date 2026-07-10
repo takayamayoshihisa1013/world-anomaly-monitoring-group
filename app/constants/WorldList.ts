@@ -243,9 +243,9 @@ export const WORLD_LIST: WorldInfo[] = [
             },
             {
                 id: 2,
-                is_anomaly: false,
+                is_anomaly: true,
                 anomaly_level: 60,
-                status_name: "正常？",
+                status_name: "双月",
                 description: "夕暮れの湖の中央に、一棟の図書館が建っている。\n橋や湖面、館内の灯りは変わらない。\nだが空には月が二つ浮かんでいる。\nどちらも自然にそこに存在しているように見える。\n湖面には二つの月が静かに映り込み、景色は以前よりも幻想的になっている。\n不思議ではあるが、どこか美しい光景だ。",
                 image: "anomaly_1.png",
                 weight: 20,
@@ -254,7 +254,7 @@ export const WORLD_LIST: WorldInfo[] = [
                 id: 3,
                 is_anomaly: true,
                 anomaly_level: 180,
-                status_name: "正常？",
+                status_name: "黒天",
                 description: "夕暮れの湖の中央に、一棟の図書館が建っている。\n橋や湖面、館内の灯りは変わらない。\nだが空は深い黒に覆われ、その中心は渦を巻くように暗く沈み込んでいる。\n見上げていると、空そのものがどこかへ吸い込まれているように感じられる。\n湖面にもその暗闇が映り込み、静かな景色に重い圧迫感を与えている。\nそれでも図書館の灯りだけは消えることなく輝き続けている。",
                 image: "anomaly_2.png",
                 weight: 10,
@@ -322,4 +322,56 @@ export const WORLD_LIST: WorldInfo[] = [
             }
         ]
     },
+    {
+        id: 10,
+        name: "海底都市",
+        description: "海の底に沈みながらも静かに存在し続ける街",
+        status: [
+            {
+                id: 1,
+                is_anomaly: false,
+                anomaly_level: 10,
+                status_name: "正常",
+                description: "青い海の底に大きな街が広がっている。\n高層ビルや商店、信号機や横断歩道もそのまま残されている。\n魚の群れが道路や交差点を泳ぎ回り、人の姿はどこにもない。\n海面から差し込む光が街を静かに照らしている。\n不思議なほど穏やかで、美しい景色が続いている。",
+                image: "normal_1.png",
+                weight: 55,
+            },
+            {
+                id: 2,
+                is_anomaly: true,
+                anomaly_level: 40,
+                status_name: "信号",
+                description: "海底都市の景色は変わらない。\n魚たちはいつも通り街を泳いでいる。\nだが交差点の信号機だけが赤く点灯している。\n車も人もいないはずなのに、誰かを止めているように見える。\nその赤い光だけが街の中で静かに存在感を放っている。",
+                image: "anomaly_1.png",
+                weight: 20,
+            },
+            {
+                id: 3,
+                is_anomaly: true,
+                anomaly_level: 180,
+                status_name: "待ち人",
+                description: "海底都市の交差点に一人の人影が立っている。\n黒い服を着た人間のように見える。\nしかし首や手足が異様に長く、人間とは思えない姿をしている。\n魚たちはその周囲を気にする様子もなく泳ぎ続けている。\nその存在だけが、この街に本来あってはならないもののように感じられる。",
+                image: "anomaly_2.png",
+                weight: 12,
+            },
+            {
+                id: 4,
+                is_anomaly: true,
+                anomaly_level: 120,
+                status_name: "青空",
+                description: "海底都市の上には本来あるはずの海面が見えない。\n代わりにどこまでも続く青空と白い雲が広がっている。\n魚たちは空を泳ぎ、光は太陽から差し込んでいる。\n街も建物も変わらない。\nただ世界の上下だけが、いつの間にか入れ替わっている。",
+                image: "anomaly_3.png",
+                weight: 8,
+            },
+            {
+                id: 5,
+                is_anomaly: true,
+                anomaly_level: 450,
+                status_name: "接近",
+                description: "海底都市の景色は変わらない。\n魚たちは泳ぎ続け、信号も静かに佇んでいる。\nだがあの人影はもう遠くにはいない。\n横断歩道のすぐ先に立ち、こちらを見ている。\n首は異様に長く、顔は光の中でよく見えない。\n前に見た時より確実に近い。\nそれなのに、いつ歩いてきたのかは誰も知らない。",
+                image: "anomaly_4.png",
+                weight: 5,
+            }
+        ]
+    }
 ]
