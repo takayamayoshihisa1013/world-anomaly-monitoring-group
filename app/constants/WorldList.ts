@@ -260,5 +260,66 @@ export const WORLD_LIST: WorldInfo[] = [
                 weight: 10,
             }
         ]
-    }
+    },
+    {
+        id: 9,
+        name: "団地の廊下",
+        description: "どこまでも続く薄暗い団地の廊下",
+        status: [
+            {
+                id: 1,
+                is_anomaly: false,
+                anomaly_level: 10,
+                status_name: "正常",
+                description: "薄暗い団地の廊下がどこまでも続いている。\n向かいにも同じような団地が並び、静かな夜の空気だけが流れている。\nすべての部屋の扉は閉じられ、人の気配はない。\n照明は一定の間隔で灯り、ただ遠くの消失点へと続いている。",
+                image: "normal_1.png",
+                weight: 50,
+            },
+            {
+                id: 2,
+                is_anomaly: true,
+                anomaly_level: 20,
+                status_name: "開いた扉",
+                description: "薄暗い団地の廊下がどこまでも続いている。\n向かいにも同じような団地が並び、静かな夜の空気だけが流れている。\nすべての部屋の扉は閉じられ、人の気配はない。\nだが、一室だけ扉が大きく開いている。\n中は暗く、何も見えない。\n誰かが出てきたのか、それとも待っているのかは分からない。",
+                image: "anomaly_1.png",
+                weight: 20,
+            },
+            {
+                id: 3,
+                is_anomaly: true,
+                anomaly_level: 40,
+                status_name: "人影",
+                description: "薄暗い団地の廊下がどこまでも続いている。\n向かいにも同じような団地が並び、静かな夜の空気だけが流れている。\nすべての部屋の扉は閉じられ、人の気配はない。\nだが、団地と団地の間に黒い人影が浮かんでいる。\n足元は見えず、どこにも立っていない。\nただ静かにその場へ留まり続けている。",
+                image: "anomaly_2.png",
+                weight: 15,
+            },
+            {
+                id: 4,
+                is_anomaly: true,
+                anomaly_level: 70,
+                status_name: "覗く住人",
+                description: "薄暗い団地の廊下がどこまでも続いている。\n向かいにも同じような団地が並び、静かな夜の空気だけが流れている。\nすべての部屋の扉は閉じられ、人の気配はない。\nだが、向かいの団地の一室から誰かがこちらを覗いている。\n距離があるため顔はよく見えない。\nそれでも視線だけは確かにこちらへ向けられている。",
+                image: "anomaly_3.png",
+                weight: 10,
+            },
+            {
+                id: 5,
+                is_anomaly: true,
+                anomaly_level: 180,
+                status_name: "生首",
+                description: "薄暗い団地の廊下がどこまでも続いている。\n向かいにも同じような団地が並び、静かな夜の空気だけが流れている。\nすべての部屋の扉は閉じられ、人の気配はない。\nだが、廊下の先に首だけが浮かんでいる。\n近付いてくる様子はない。\n　　　\n見えている",
+                image: "anomaly_4.png",
+                weight: 4,
+            },
+            {
+                id: 6,
+                is_anomaly: true,
+                anomaly_level: 999,
+                status_name: "赤い世界",
+                description: "薄暗い団地の廊下がどこまでも続いている。\n向かいにも同じような団地が並び、静かな夜の空気だけが流れている。\nすべての部屋の扉は閉じられ、人の気配はない。\nだが、廊下全体が赤い光に照らされている。\n左側の外から首だけが静かに覗いている。\nあかい\nあかい\nそとからみてる\nまだいる",
+                image: "anomaly_5.png",
+                weight: 1,
+            }
+        ]
+    },
 ]
