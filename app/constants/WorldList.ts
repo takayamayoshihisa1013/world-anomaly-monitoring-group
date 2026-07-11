@@ -373,5 +373,39 @@ export const WORLD_LIST: WorldInfo[] = [
                 weight: 5,
             }
         ]
-    }
+    },
+    {
+        id: 11,
+        name: "地下駐車場",
+        description: "薄暗い地下駐車場",
+        status: [
+            {
+                id: 1,
+                is_anomaly: false,
+                anomaly_level: 10,
+                status_name: "正常",
+                description: "薄暗い地下駐車場がどこまでも続いている。\n一定間隔で柱が並び、白線だけが静かに奥へと伸びている。\n車も人の姿もなく、聞こえるのは照明の小さな音だけだ。\n床にはところどころ水たまりができており、天井の照明を静かに映している。",
+                image: "normal_1.png",
+                weight: 60,
+            },
+            {
+                id: 2,
+                is_anomaly: true,
+                anomaly_level: 40,
+                status_name: "反射",
+                description: "薄暗い地下駐車場がどこまでも続いている。\n一定間隔で柱が並び、白線だけが静かに奥へと伸びている。\n車も人の姿もなく、聞こえるのは照明の小さな音だけだ。\nだが、遠くの床に映る光の中には黒い人影が立っている。\n視線を上げても、その場所には誰もいない。\n反射だけが、そこに誰かがいることを映し続けている。",
+                image: "anomaly_1.png",
+                weight: 25,
+            },
+            {
+                id: 3,
+                is_anomaly: true,
+                anomaly_level: 80,
+                status_name: "水たまり",
+                description: "薄暗い地下駐車場がどこまでも続いている。\n一定間隔で柱が並び、白線だけが静かに奥へと伸びている。\n車も人の姿もなく、聞こえるのは照明の小さな音だけだ。\nだが、足元の水たまりには一人の女性が映っている。\nその姿は水たまりの向こう側に立っているように見える。\n目を上げても、その場所には誰もいない。",
+                image: "anomaly_2.png",
+                weight: 15,
+            }
+        ]
+    },
 ]
