@@ -408,4 +408,65 @@ export const WORLD_LIST: WorldInfo[] = [
             }
         ]
     },
+    {
+        id: 12,
+        name: "電車",
+        description: "暗闇を向かい続ける静かな電車",
+        status: [
+            {
+                id: 1,
+                is_anomaly: false,
+                anomaly_level: 10,
+                status_name: "正常",
+                description: "薄暗い車内がどこまでも続いている。\n吊り革や座席、広告は規則正しく並び、車両の奥へと静かに続いている。\n乗客は一人もおらず、聞こえるのは走行音だけだ。\n窓の外は暗く、どこを走っているのかは分からない。",
+                image: "normal_1.png",
+                weight: 40,
+            },
+            {
+                id: 2,
+                is_anomaly: true,
+                anomaly_level: 25,
+                status_name: "乗客",
+                description: "薄暗い車内がどこまでも続いている。\n吊り革や座席、広告は規則正しく並び、車両の奥へと静かに続いている。\n乗客は一人もおらず、聞こえるのは走行音だけだ。\nだが、ドアの脇に一人の女性が立っている。\nこちらには背を向けたまま動く様子はない。\nいつからそこにいたのかは分からない。",
+                image: "anomaly_1.png",
+                weight: 18,
+            },
+            {
+                id: 3,
+                is_anomaly: true,
+                anomaly_level: 40,
+                status_name: "広告",
+                description: "薄暗い車内がどこまでも続いている。\n吊り革や座席、広告は規則正しく並び、車両の奥へと静かに続いている。\n乗客は一人もおらず、聞こえるのは走行音だけだ。\nだが、車内広告に写る人物だけがこちらを見つめている。\nほかの広告は変わらない。\n視線だけが車内を追い続けている。",
+                image: "anomaly_2.png",
+                weight: 15,
+            },
+            {
+                id: 4,
+                is_anomaly: true,
+                anomaly_level: 80,
+                status_name: "視線",
+                description: "薄暗い車内がどこまでも続いている。\n吊り革や座席、広告は規則正しく並び、車両の奥へと静かに続いている。\n乗客は車内のあちこちに座ったり立ったりしている。\nだが、その全員がこちらだけを見ている。\n誰一人として目を逸らさない。\n車内は静かなまま、視線だけが集まっている。",
+                image: "anomaly_3.png",
+                weight: 12,
+            },
+            {
+                id: 5,
+                is_anomaly: true,
+                anomaly_level: 180,
+                status_name: "下半身",
+                description: "薄暗い車内がどこまでも続いている。\n吊り革や座席、広告は規則正しく並び、車両の奥へと静かに続いている。\n乗客は一人もおらず、聞こえるのは走行音だけだ。\nだが、通路の中央には下半身だけが静かに立っている。\n上半身はどこにも存在しない。\nそれでも倒れることなく、その場に立ち続けている。",
+                image: "anomaly_4.png",
+                weight: 10,
+            },
+            {
+                id: 6,
+                is_anomaly: true,
+                anomaly_level: 999,
+                status_name: "覗き込む",
+                description: "薄暗い車内がどこまでも続いている。\n吊り革や座席、広告は規則正しく並び、車両の奥へと静かに続いている。\n乗客は一人もおらず、聞こえるのは走行音だけだ。\nだが、目の前を一人の女性が覗き込んでいる。\n顔が近すぎて、もう車内はほとんど見えない。\nみつけた\nやっと\nみてる",
+                image: "anomaly_5.png",
+                weight: 5,
+            }
+        ]
+    },
 ]
