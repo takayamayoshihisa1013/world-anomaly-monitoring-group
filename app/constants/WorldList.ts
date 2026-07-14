@@ -529,5 +529,57 @@ export const WORLD_LIST: WorldInfo[] = [
                 weight: 5,
             }
         ]
+    },
+    {
+        id: 14,
+        name: "無限プール",
+        description: "終わりの見えない巨大な屋内プール施設",
+        status: [
+            {
+                id: 1,
+                is_anomaly: false,
+                anomaly_level: 10,
+                status_name: "正常",
+                description: "巨大な屋内プール施設がどこまでも続いている。\n白い柱が規則正しく並び、静かな水面は鏡のように天井を映している。\n利用者も監視員もおらず、水の音だけが静かに響いている。\n清潔で美しい景色が、果てしなく続いている。",
+                image: "normal_1.png",
+                weight: 55,
+            },
+            {
+                id: 2,
+                is_anomaly: true,
+                anomaly_level: 40,
+                status_name: "深度不明",
+                description: "巨大な屋内プールの景色は変わらない。\n白い柱も照明も静かなまま続いている。\nだが水底だけが見えない。\nタイルも排水口もなく、巨大な穴のような暗闇がどこまでも続いている。",
+                image: "anomaly_1.png",
+                weight: 20,
+            },
+            {
+                id: 3,
+                is_anomaly: true,
+                anomaly_level: 180,
+                status_name: "向こう側",
+                description: "対岸に一人の女性が立っている。\n白い服を着いているように見える。\nしかし胴体だけが異様に長く、人間とは思えない姿をしている。\n遠すぎて表情は分からない。\nそれでもこちらを見ていることだけは分かる。",
+                image: "anomaly_2.png",
+                weight: 12,
+            },
+            {
+                id: 4,
+                is_anomaly: true,
+                anomaly_level: 120,
+                status_name: "停電",
+                description: "\n　　　　くらい",
+                image: "anomaly_3.png",
+                weight: 8,
+            },
+            {
+                id: 5,
+                is_anomaly: true,
+                anomaly_level: 450,
+                status_name: "水中",
+                description: "\n\n\n        な \nぜ　水　　の\n   中？",
+                image: "anomaly_4.png",
+                weight: 5,
+            }
+        ]
     }
 ]
