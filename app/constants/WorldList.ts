@@ -581,5 +581,57 @@ export const WORLD_LIST: WorldInfo[] = [
                 weight: 5,
             }
         ]
+    },
+    {
+        id: 15,
+        name: "無限キッズエリア",
+        description: "ショッピングモールの中にある、どこまでも続く子供向け遊び場",
+        status: [
+            {
+                id: 1,
+                is_anomaly: false,
+                anomaly_level: 10,
+                status_name: "正常",
+                description: "巨大な屋内キッズエリア。\n赤や青、黄色の遊具がどこまでも並んでいる。\n床は柔らかいクッション素材で覆われており、転んでも痛くない。\n遠くにはボールプールや滑り台も見える。\n子供たちの声は聞こえない。\nそれでも施設は営業中のように照明が灯り続けている。",
+                image: "normal_1.png",
+                weight: 70,
+            },
+            {
+                id: 2,
+                is_anomaly: true,
+                anomaly_level: 40,
+                status_name: "着ぐるみ",
+                description: "巨大な屋内キッズエリア。\n遊具やボールプールは正常時と変わらない。\nしかし遠くの遊具のそばに、マスコットキャラクターのような着ぐるみが立っている。\nこちらを見ているようにも見えるが、表情は変わらない。\n誰もいないはずなのに、その存在だけが場違いに感じられる。",
+                image: "anomaly_1.png",
+                weight: 12,
+            },
+            {
+                id: 3,
+                is_anomaly: true,
+                anomaly_level: 120,
+                status_name: "見たな？",
+                description: "巨大な屋内キッズエリア。\n風景は変わらない。\n遠くにいた着ぐるみが遊具の奥に立っている。\n体や顔には赤黒い汚れのようなものが付着している。\n着ぐるみは真っ直ぐこちらを見つめている。\n今にも何かを話しかけてきそうな雰囲気だけが漂っている。",
+                image: "anomaly_2.png",
+                weight: 8,
+            },
+            {
+                id: 4,
+                is_anomaly: true,
+                anomaly_level: 220,
+                status_name: "停電",
+                description: "巨大な屋内キッズエリア。\n施設全体の照明が落ちている。\n遊具の輪郭だけが薄暗く浮かび上がる。\nボールプールも滑り台もそのまま存在している。\n誰もいないはずなのに、暗闇の奥から何かが動いたような気配だけが残っている。",
+                image: "anomaly_3.png",
+                weight: 6,
+            },
+            {
+                id: 5,
+                is_anomaly: true,
+                anomaly_level: 999,
+                status_name: "接近",
+                description: "\nにげるな",
+                image: "anomaly_4.png",
+                weight: 4,
+            }
+        ]
     }
 ]
