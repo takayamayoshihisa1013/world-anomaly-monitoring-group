@@ -24,9 +24,13 @@ export default function WorldLayout({ children }: { children: React.ReactNode })
                     onClick={() => setMenuOpen(!menuOpen)}
                     className="absolute left-[-40px] top-1/2 -translate-y-1/2 w-[40px] h-[100px] bg-black/90 lg:bg-black/80 border-y border-l border-gray-700 flex items-center justify-center hover:text-[#d10000] hover:bg-gray-900 transition-all cursor-pointer shadow-[-5px_0_10px_rgba(0,0,0,0.5)] text-white"
                 >
-                    <span className={`text-xl transform transition-transform duration-500 ${menuOpen ? "rotate-180" : ""}`}>
-                        ◀
-                    </span>
+                    {/* span ではなく div を使い、ボタンの領域いっぱいに広げてから中央配置します */}
+                    <div className={`flex items-center justify-center w-full h-full transform transition-transform duration-500 ${menuOpen ? "rotate-180" : ""}`}>
+                        <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 lg:w-5 lg:h-5">
+                            {/* 真ん中にピッタリ合うように計算された三角形のパスです */}
+                            <path d="M18 4L6 12L18 20Z" />
+                        </svg>
+                    </div>
                 </button>
 
                 <div className="bg-black/95 lg:bg-black/90 h-full w-[280px] lg:w-[320px] overflow-y-auto horror-scroll p-4 lg:p-6 border-l border-[#d10000]/50 shadow-[-10px_0_30px_rgba(0,0,0,0.8)]">
