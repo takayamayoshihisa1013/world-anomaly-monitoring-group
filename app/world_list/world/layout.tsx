@@ -10,7 +10,6 @@ export default function WorldLayout({ children }: { children: React.ReactNode })
 
     return (
         <>
-            {/* ここに個別の監視画面（page.tsx）の中身がすっぽり入ります */}
             {children}
 
             {/* 共通のサイドメニュー */}
@@ -25,8 +24,10 @@ export default function WorldLayout({ children }: { children: React.ReactNode })
                     onClick={() => setMenuOpen(!menuOpen)}
                     className="absolute left-[-40px] top-1/2 -translate-y-1/2 w-[40px] h-[100px] bg-black/90 lg:bg-black/80 border-y border-l border-gray-700 flex items-center justify-center hover:text-[#d10000] hover:bg-gray-900 transition-all cursor-pointer shadow-[-5px_0_10px_rgba(0,0,0,0.5)] text-white"
                 >
-                    <span className={`text-xl transform transition-transform duration-500 ${menuOpen ? "rotate-180" : ""}`}>
-                        ◀
+                    <span className={`transform transition-transform duration-500 ${menuOpen ? "rotate-180" : ""}`}>
+                        <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+                            <path d="M16 4l-10 8 10 8z" />
+                        </svg>
                     </span>
                 </button>
 
@@ -36,7 +37,6 @@ export default function WorldLayout({ children }: { children: React.ReactNode })
                     </p>
 
                     <section className="flex flex-col gap-3 lg:gap-4">
-                        {/* ▼ 追加：一覧画面に戻るリンク ▼ */}
                         <Link href="/world_list" onClick={() => setMenuOpen(false)}>
                             <div className="border border-gray-500 bg-gray-900/40 p-3 lg:p-4 hover:bg-[#d10000]/20 hover:border-[#d10000] transition-all duration-300 group cursor-pointer text-center mb-2">
                                 <p className="font-bold text-sm lg:text-base text-gray-300 group-hover:text-white transition-colors">
