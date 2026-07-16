@@ -633,5 +633,66 @@ export const WORLD_LIST: WorldInfo[] = [
                 weight: 4,
             }
         ]
-    }
+    },
+    {
+        id: 16,
+        name: "山に囲まれた田舎町",
+        description: "山々と田畑に囲まれた静かな田舎町",
+        status: [
+            {
+                id: 1,
+                is_anomaly: false,
+                anomaly_level: 10,
+                status_name: "昼",
+                description: "青く澄み渡る空の下、山々に囲まれた静かな田舎町が広がっている。\n田畑は風に揺れ、小さな家々が並び、細い道が町の奥へと続いている。\n遠くには緑豊かな山々が連なり、どこか懐かしい景色が広がっている。\n人の姿は見当たらず、鳥の鳴き声だけが静かに響いている。",
+                image: "normal_1.png",
+                weight: 25,
+            },
+            {
+                id: 2,
+                is_anomaly: false,
+                anomaly_level: 10,
+                status_name: "夕方",
+                description: "夕焼けに染まり始めた空の下、山々に囲まれた静かな田舎町が広がっている。\n田畑は穏やかな風に揺れ、小さな家々が夕日に照らされている。\n山の向こうへ沈みかけた太陽が町全体を優しく赤く染めている。\n静かな時間だけがゆっくりと流れている。",
+                image: "normal_2.png",
+                weight: 20,
+            },
+            {
+                id: 3,
+                is_anomaly: false,
+                anomaly_level: 10,
+                status_name: "夜",
+                description: "星空の下、山々に囲まれた田舎町は静かな眠りについている。\n家々の灯りはまばらに残り、田畑には夜風だけが吹いている。\n山の稜線は夜空に溶け込み、遠くの街灯だけが道を照らしている。\n静けさの中に、不思議と安心感が漂っている。",
+                image: "normal_3.png",
+                weight: 20,
+            },
+            {
+                id: 4,
+                is_anomaly: false,
+                anomaly_level: 20,
+                status_name: "雷雨",
+                description: "厚い雨雲が山々を覆い、大粒の雨が田舎町へ降り注いでいる。\n激しい雷鳴が空に響き、何度も稲妻が山の向こうを照らしている。\n田畑は雨に濡れ、小さな家々も灰色の景色へ溶け込んでいる。\nそれでも町は静かで、誰一人として姿を見せない。",
+                image: "normal_4.png",
+                weight: 15,
+            },
+            {
+                id: 5,
+                is_anomaly: true,
+                anomaly_level: 120,
+                status_name: "？",
+                description: "？",
+                image: "anomaly_1.png",
+                weight: 12,
+            },
+            {
+                id: 6,
+                is_anomaly: true,
+                anomaly_level: 999,
+                status_name: "目",
+                description: "\n\n\n　　　　め\n\n",
+                image: "anomaly_2.png",
+                weight: 8,
+            }
+        ]
+    },
 ]
